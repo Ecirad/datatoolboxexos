@@ -30,3 +30,15 @@ data_mammals = function(){
 data_mammals_ecoregion = function(){
   readr::read_csv(here::here("data", "wwf-wildfinder", "wildfinder-ecoregions_species.csv"))
 }
+
+
+#' Import pantheria data
+#'
+#' @return A 2 columns tibble linking species IDs to ecoregions IDs
+#' @export
+#'
+data_pantheria   <- function() {
+  readr::read_delim(
+    here::here("data","pantheria-traits","PanTHERIA_1-0_WR05_Aug2008.txt"),
+    delim = "\t")
+}
