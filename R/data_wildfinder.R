@@ -5,7 +5,8 @@
 #'
 #' @examples
 data_ecoregion = function(){
-  readr::read_csv(here::here("data", "wwf_wildfinder", "wildfinder-ecoregions_list.csv"))
+  cat("reading ecoregion data \n")
+  readr::read_csv(here::here("data", "wwf-wildfinder", "wildfinder-ecoregions_list.csv"))
 }
 
 
@@ -16,7 +17,7 @@ data_ecoregion = function(){
 #'
 #' @examples
 data_mammals = function(){
-  readr::read_csv(here::here("data", "wwf_wildfinder", "wildfinder-mammals_list.csv"))
+  readr::read_csv(here::here("data", "wwf-wildfinder", "wildfinder-mammals_list.csv"))
 }
 
 
@@ -27,5 +28,5 @@ data_mammals = function(){
 #'
 #' @examples
 data_mammals_ecoregion = function(){
-  readr::read_csv(here::here("data", "wwf_wildfinder", "wildfinder-ecoregions_species.csv"))
+  readr::read_csv(here::here("data", "wwf-wildfinder", "wildfinder-ecoregions_species.csv"))
 }
